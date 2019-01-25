@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function num(x){
+			var flag='是一个质数';
+			for(var i=2;i<x;i++){
+				if(x%i==0){
+					flag='不是一个质数';
+					break;
+				}
+			}
+			return flag;
+		}
+		alert(num(11));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

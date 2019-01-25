@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>			
+		var arr=[6,5,54,8,15,55,16];
+		// 最大值
+		var maxIndex = 0;
+		function max(arr){
+		// 选择排序
+			for(var i=1;i<arr.length;i++){
+				if(arr[maxIndex]<arr[i]){
+					maxIndex=i;
+				}
+			}
+			return arr[maxIndex];
+		}		
+		// 最小值
+		var minIndex = 0;
+		function min(arr){
+			for(var i=1;i<arr.length;i++){
+				if(arr[minIndex]>arr[i]){
+					minIndex=i;
+				}
+			}
+			return arr[minIndex];
+		}		
+
+		console.log(max(arr));
+		console.log(min(arr));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
